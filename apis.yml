@@ -1,25 +1,118 @@
 aid: mindsdb
 name: MindsDB
-description: 'MindsDB is a company surfaced as a portfolio company of benchmark and added to the API Evangelist
-  network as a stub for enrichment. Sector: artificial-intelligence. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  MindsDB is an open-source (MIT) AI data platform and semantic query engine that
+  lets AI agents securely query, transform, and act on data from any datasource
+  using SQL. It connects to 200+ databases, applications, and vector stores, builds
+  knowledge bases for hybrid vector + keyword search, trains and serves models, and
+  runs open-source AI agents and automated jobs — all through a SQL-over-HTTP REST
+  API, the MySQL wire protocol, official Python and JavaScript SDKs, and a first-party
+  Model Context Protocol (MCP) server. The company now operates as MindsHub
+  (mindshub.ai), a unified AI workspace where knowledge workers delegate multi-step
+  projects to agents, all built on the MindsDB engine. Originally surfaced as a
+  Benchmark portfolio company; enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/mindsdb/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/mindsdb.png
 x-type: company
 x-source: benchmark-portfolio
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Artificial Intelligence
-apis: []
+- Machine Learning
+- AI Agents
+- Data
+- Database
+- SQL
+- Knowledge Base
+- MCP
+- Open Source
+apis:
+- name: MindsDB HTTP REST API
+  description: >-
+    SQL-over-HTTP query engine plus RESTful resources for projects, databases,
+    knowledge bases, tables, views, files, jobs, and AI agents. Self-hosted by
+    default (http://127.0.0.1:47334); MindsDB Cloud is the documented hosted host.
+  humanURL: https://docs.mindsdb.com/rest/overview
+  baseURL: https://cloud.mindsdb.com
+  tags:
+  - SQL
+  - AI Agents
+  - Knowledge Base
+  properties:
+  - type: APIReference
+    url: https://docs.mindsdb.com/rest/overview
+  - type: Authentication
+    url: authentication/mindsdb-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mindsdb-domain-security.yml
 - type: Website
-  url: https://www.mindsdb.com
+  url: https://mindshub.ai
+- type: DeveloperPortal
+  url: https://docs.mindshub.ai
+- type: Documentation
+  url: https://docs.mindshub.ai
+- type: APIReference
+  url: https://docs.mindsdb.com/rest/overview
+- type: GettingStarted
+  url: https://docs.mindsdb.com/quickstart
+- type: GitHubOrganization
+  url: https://github.com/mindsdb
+- type: Blog
+  url: https://mindshub.ai/blog
+- type: Support
+  url: https://mindshub.ai/discord
+- type: Pricing
+  url: https://mindshub.ai/pricing
+- type: SignUp
+  url: https://console.mindshub.ai
+- type: TermsOfService
+  url: https://mindshub.ai/terms
+- type: PrivacyPolicy
+  url: https://mindshub.ai/privacy-policy
+- type: Packages
+  url: packages/mindsdb-packages.yml
+- type: SDKs
+  url: packages/mindsdb-packages.yml
+- type: MCPServer
+  url: mcp/mindsdb-mcp.yml
+- type: LLMsTxt
+  url: llms/mindsdb-llms.txt
+- type: Authentication
+  url: authentication/mindsdb-authentication.yml
+- type: Conventions
+  url: conventions/mindsdb-conventions.yml
+- type: ChangeLog
+  url: changelog/mindsdb-changelog.yml
+- type: Conformance
+  url: conformance/mindsdb-conformance.yml
+- type: Lifecycle
+  url: lifecycle/mindsdb-lifecycle.yml
+- type: TrustCenter
+  url: https://trust.mindsdb.com
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1
