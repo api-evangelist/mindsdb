@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mindsdb.com/rest/authentication + mindsdb_python_sdk / mindsdb-js-sdk READMEs
+summary:
+  types: [none, session, oauth2]
+  notes: >-
+    MindsDB is primarily self-hosted software. Against a local MindsDB server no
+    authentication is required. Against MindsDB Cloud the SDKs authenticate with
+    a login (email) + password, which establishes a session cookie used by the
+    HTTP REST API. The built-in MCP server can optionally require OAuth.
+schemes:
+  - name: self-hosted-no-auth
+    type: none
+    description: Default local server (http://127.0.0.1:47334) requires no authentication.
+    sources: [https://github.com/mindsdb/mindsdb_python_sdk]
+  - name: cloud-session
+    type: session
+    description: >-
+      MindsDB Cloud authenticates with login (email) + password; the SDK/HTTP
+      client then carries a session cookie. Managed/Pro instances use the same
+      login flow with is_managed set.
+    login_host: https://cloud.mindsdb.com
+    sources:
+      - https://github.com/mindsdb/mindsdb_python_sdk
+      - https://github.com/mindsdb/mindsdb-js-sdk
+  - name: mcp-oauth
+    type: oauth2
+    description: The built-in MCP server (FastMCP) supports optional OAuth (mindsdb/api/mcp/oauth.py).
+    optional: true
+    sources: [https://github.com/mindsdb/engine]

@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mindsdb.com/rest/overview
+summary: >-
+  The MindsDB HTTP REST API is a thin wrapper over MindsDB's SQL engine. Most
+  work is done by POSTing SQL to the query endpoint; resource endpoints
+  (databases, projects, knowledge bases, tables, jobs, agents) are RESTful
+  conveniences over the same engine. Everything is namespaced under a project
+  (default project: `mindsdb`).
+base_url:
+  self_hosted_default: http://127.0.0.1:47334
+  cloud: https://cloud.mindsdb.com
+sql_over_http:
+  endpoint: POST /api/sql/query
+  body: '{ "query": "<SQL statement>" }'
+  response_fields: [column_names, data, type, error_message]
+  note: Query results are returned as column_names + row arrays, not JSON objects.
+resources:
+  - projects       # /api/projects
+  - databases      # /api/databases
+  - knowledge_bases
+  - tables
+  - views
+  - files          # /api/files
+  - jobs           # /api/projects/{project}/jobs
+  - agents         # /api/projects/{project}/agents
+authentication: authentication/mindsdb-authentication.yml
+idempotency:
+  supported: false
+  note: No idempotency-key header is documented; SQL statements are the unit of work.
+pagination:
+  style: sql
+  note: Result-set paging is done with SQL LIMIT / OFFSET clauses, not API cursors.
+versioning:
+  scheme: unversioned-path
+  note: Endpoints live under /api/* without a version segment; releases are tracked via GitHub releases.
+error_envelope:
+  fields: [error_message, error_code]
+  note: SQL/HTTP errors return an error_message (and often error_code) in the JSON body.

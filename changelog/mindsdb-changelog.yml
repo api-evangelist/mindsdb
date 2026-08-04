@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mindsdb/mindsdb/releases
+scheme: calver
+current_version: v26.1.0
+notes: >-
+  MindsDB publishes dated, versioned releases on GitHub using a CalVer-style
+  vYY.MINOR.PATCH scheme, with rc pre-releases. The GitHub Releases page is the
+  authoritative changelog; recent window captured below.
+entries:
+  - version: v26.1.0
+    date: '2026-04-23'
+    highlights:
+      - Improved SQL support (MySQL API tests, MSSQL result conversion fixes, BigQuery select parsing).
+      - New integration handlers (HubSpot Leads, Raindrop.io, Denodo, Freshdesk); MotherDuck via DuckDB.
+      - Hardened exception handling for MSSQL connection checks and temp-folder cleanup.
+    breaking: false
+  - version: v26.0.1
+    date: '2026-03-03'
+    breaking: false
+  - version: v26.0.0
+    date: '2026-02-25'
+    breaking: true
+    note: Major version rollover (v26).

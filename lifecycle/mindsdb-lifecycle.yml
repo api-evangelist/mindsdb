@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mindsdb/mindsdb/releases
+versioning:
+  scheme: calver
+  current: v26.1.0
+  docs: https://github.com/mindsdb/mindsdb/releases
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal API deprecation policy or RFC 8594 Sunset/Deprecation header support was found.
+sla:
+  url: null
+status_page: null
+status_page_note: status.mindsdb.com does not resolve; no public status page found.

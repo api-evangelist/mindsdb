@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/pypi/mindsdb-sdk/json + https://registry.npmjs.org/mindsdb-js-sdk
+packages:
+  - language: python
+    registry: pypi
+    name: mindsdb-sdk
+    version: 3.5.0
+    url: https://pypi.org/project/mindsdb-sdk/
+    repository: https://github.com/mindsdb/mindsdb_python_sdk
+    install: pip install mindsdb-sdk
+    summary: MindsDB Python SDK — connect to a remote MindsDB server over the HTTP API.
+    author: MindsDB Inc
+    official: true
+  - language: javascript
+    registry: npm
+    name: mindsdb-js-sdk
+    version: 2.3.2
+    url: https://www.npmjs.com/package/mindsdb-js-sdk
+    repository: https://github.com/mindsdb/mindsdb-js-sdk
+    install: npm install mindsdb-js-sdk
+    summary: Official JavaScript SDK for MindsDB.
+    official: true

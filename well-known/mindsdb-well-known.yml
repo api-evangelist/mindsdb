@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: probed
+source: live probe of /.well-known/* on mindsdb.com, www.mindsdb.com, mdb.ai
+note: >-
+  No genuine .well-known discovery documents are published. All probed hosts
+  return an SPA HTML catch-all (identical body) for every /.well-known/* path,
+  so none of these are real machine-readable documents. Recorded as an honest
+  negative — no files saved, no WellKnown/SecurityTxt pointer emitted.
+hosts:
+  - host: https://mindsdb.com
+    documents:
+      - {path: /.well-known/security.txt, status: 200, real: false, reason: SPA HTML catch-all}
+      - {path: /.well-known/ai-plugin.json, status: 200, real: false, reason: SPA HTML catch-all}
+      - {path: /.well-known/openid-configuration, status: 200, real: false, reason: SPA HTML catch-all}
+      - {path: /.well-known/oauth-authorization-server, status: 200, real: false, reason: SPA HTML catch-all}
+  - host: https://mdb.ai
+    documents:
+      - {path: /.well-known/security.txt, status: 200, real: false, reason: SPA HTML catch-all}

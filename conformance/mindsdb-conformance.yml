@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: derived
+source: docs.mindsdb.com + github.com/mindsdb/engine
+standards:
+  - id: mcp
+    conforms: true
+    evidence: First-party FastMCP server in mindsdb/api/mcp exposing a `query` tool over streamable-http.
+  - id: oauth2
+    conforms: true
+    partial: true
+    evidence: MCP server supports optional OAuth (mindsdb/api/mcp/oauth.py); not required by default.
+  - id: mysql-wire-protocol
+    conforms: true
+    evidence: MindsDB speaks the MySQL wire protocol so SQL clients can connect directly.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: REST errors use a MindsDB JSON envelope (error_message/error_code), not application/problem+json.
+  - id: sql-92
+    conforms: true
+    partial: true
+    evidence: Standard SQL support is a documented MindsDB capability (with MindsDB AI extensions).
