@@ -2,38 +2,41 @@ generated: '2026-07-20'
 method: searched
 status: published
 source: https://docs.mindsdb.com/mcp/overview + https://github.com/mindsdb/engine/tree/main/mindsdb/api/mcp
-description: >-
-  MindsDB ships a first-party MCP (Model Context Protocol) server built into the
-  MindsDB engine. It exposes the MindsDB query surface to MCP clients (Claude
-  Desktop, OpenAI, Cursor) so agents can run SQL against any connected data
-  source, knowledge base, model, or agent. Implemented with FastMCP; supports
-  optional OAuth. A separate hosted MCP server (mindsdb/minds-mcp) fronts the
-  MindsHub "Minds" API.
+description: MindsDB ships a first-party MCP (Model Context Protocol) server built into the MindsDB engine.
+  It exposes the MindsDB query surface to MCP clients (Claude Desktop, OpenAI, Cursor) so agents can run
+  SQL against any connected data source, knowledge base, model, or agent. Implemented with FastMCP; supports
+  optional OAuth. A separate hosted MCP server (mindsdb/minds-mcp) fronts the MindsHub "Minds" API.
 servers:
-  - name: mindsdb-engine-mcp
-    kind: self-hosted
-    transport: streamable-http
-    http_path: /streamable
-    default_host: 127.0.0.1
-    default_port: 47337
-    auth: optional-oauth
-    source_repo: https://github.com/mindsdb/engine
-    source_path: mindsdb/api/mcp/mcp_instance.py
-    docs: https://docs.mindsdb.com/mcp/usage
-    clients_documented:
-      - https://docs.mindsdb.com/mcp/anthropic
-      - https://docs.mindsdb.com/mcp/openai
-      - https://docs.mindsdb.com/mcp/cursor_usage
-    tools:
-      - name: query
-        description: Execute a SQL query against MindsDB (any connected datasource, model, knowledge base, or agent).
-        source: mindsdb/api/mcp/tools/query.py
-  - name: minds-mcp
-    kind: hosted
-    transport: streamable-http
-    source_repo: https://github.com/mindsdb/minds-mcp
-    description: MCP server for the MindsHub "Minds" API; requires an API key.
-    tools:
-      - name: completion
-        description: Send a message to a named Mind and return its completion.
-        source: server.py
+- name: mindsdb-engine-mcp
+  kind: self-hosted
+  transport: streamable-http
+  http_path: /streamable
+  default_host: 127.0.0.1
+  default_port: 47337
+  auth: optional-oauth
+  source_repo: https://github.com/mindsdb/engine
+  source_path: mindsdb/api/mcp/mcp_instance.py
+  docs: https://docs.mindsdb.com/mcp/usage
+  clients_documented:
+  - https://docs.mindsdb.com/mcp/anthropic
+  - https://docs.mindsdb.com/mcp/openai
+  - https://docs.mindsdb.com/mcp/cursor_usage
+  tools:
+  - name: query
+    description: Execute a SQL query against MindsDB (any connected datasource, model, knowledge base,
+      or agent).
+    source: mindsdb/api/mcp/tools/query.py
+- name: minds-mcp
+  kind: hosted
+  transport: streamable-http
+  source_repo: https://github.com/mindsdb/minds-mcp
+  description: MCP server for the MindsHub "Minds" API; requires an API key.
+  tools:
+  - name: completion
+    description: Send a message to a named Mind and return its completion.
+    source: server.py
+deployment:
+  mode: unclear
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
