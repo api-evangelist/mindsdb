@@ -1,0 +1,34 @@
+# Front Door AI Index — mindsdb — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: mindsdb
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: mindshub.ai
+  final_host: mindshub.ai
+  ownership: own
+  owner: mindsdb
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 61
+  host_score: 61
+  density: 13.78
+  words: 4427
+  tiers:
+    agentic: 8
+    core: 5
+    model: 48
+  ambiguous: 16
+  top_terms:
+    GPT: 24
+    Claude: 16
+    agent: 14
+    Gemini: 8
+    AI: 5
+    inference: 4
+    prompts: 3
+    AI agent: 1
+    intelligence: 1
+    smart: 1
