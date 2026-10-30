@@ -64,6 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MindsDB is a company surfaced as a portfolio company of benchmark and added to the API Evangelist network as a stub for enrichment. Sector: artificial-intelligence. This profile is a lead awaiting the enrichment pipeline.
+MindsDB is an open-source (MIT) AI data platform and semantic query engine that lets AI agents securely query, transform, and act on data from any datasource using SQL. It connects to 200+ databases, applications, and vector stores, builds knowledge bases for hybrid vector + keyword search, trains and serves models, and runs open-source AI agents and automated jobs — all through a SQL-over-HTTP REST API, the MySQL wire protocol, official Python and JavaScript SDKs, and a first-party Model Context Protocol (MCP) server. The company now operates as MindsHub (mindshub.ai), a unified AI workspace where knowledge workers delegate multi-step projects to agents, all built on the MindsDB engine. Originally surfaced as a Benchmark portfolio company; enriched by the API Evangelist pipeline.
 
-Source: portfolio company of [benchmark](https://github.com/api-evangelist/benchmark) — https://www.mindsdb.com
+**Areas:** Company · Artificial Intelligence · Machine Learning · AI Agents · Data · Database · SQL · Knowledge Base · MCP · Open Source
+
+## MindsDB on APIs.io
+
+Everything profiled for MindsDB is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mindsdb/](https://apis.io/providers/mindsdb/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [MindsDB HTTP REST API](https://apis.io/apis/mindsdb/mindsdb-http-rest-api/) — SQL-over-HTTP query engine plus RESTful resources for projects, databases, knowledge bases, tables, views, files, jobs, and AI agents. Self-hosted by…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [mindsdb-mcp.yml](https://apis.io/servers/mindsdb/mindsdb-mcp-yml/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mindsdb Authentication](https://apis.io/security/mindsdb/mindsdb-authentication/)
+- [Mindsdb Domain Security](https://apis.io/security/mindsdb/mindsdb-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Mindsdb Plans Pricing](https://apis.io/plans/mindsdb/mindsdb-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://mindshub.ai)
+- [Documentation](https://docs.mindshub.ai)
+- [Getting started](https://docs.mindsdb.com/quickstart)
+- [API reference](https://docs.mindsdb.com/rest/overview)
+- [Pricing](https://mindshub.ai/pricing)
+- [Sign up](https://console.mindshub.ai)
+- [Support](https://mindshub.ai/discord)
+- [Blog](https://mindshub.ai/blog)
+- [Trust centre](https://trust.mindsdb.com)
+- [Terms of service](https://mindshub.ai/terms)
+- [Privacy policy](https://mindshub.ai/privacy-policy)
+- [GitHub](https://github.com/mindsdb)
+
+## API Evangelist rating
+
+**Kin Score 32.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 63.2 |
+
+**Agent readiness 6.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mindsdb/](https://apis.io/providers/mindsdb/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MindsDB: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mindsdb/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
